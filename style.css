@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    background-color: #ccc;
+}
+.form_class{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 500px;
+   height: 400px;
+   background-color: aliceblue;
+   border-radius: 10px;
+   box-shadow: 5px 15px 10px gray;
+   align-items: center;
+   transition: all 0.5s ease-in-out;
+}
+.main_div{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+.sections{
+   display: flex;
+   flex-direction: column;
+}
+.sections input{
+    color: rgb(99, 99, 99);
+    width: 100px;
+    height: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    align-items: center;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    text-align: center;
+    margin-left: 20px;
+    background-color: #f0f8ff;
+}
+.sections input::placeholder{
+    color: #ccc;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+}
+.sections input:focus{
+    border-bottom: 2px solid #000;
+}
+.sections label{
+    margin-right: 5px;
+    font-size: 18px;
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.header_h3{
+    border-bottom: 2px solid gray;
+    padding: 15px;
+    margin-bottom: 50px;
+    margin-top: -40px;
+}
+.header_h3 h3{
+    font-size: 28px;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: gray;
+}
+.btn_div{
+    margin-top: 50px;
+}
+.btn_div button{
+    padding: 10px 15px;
+    border-radius: 4px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.btn_div button:hover{
+    background-color: rgb(48, 48, 48);
+}
+#Age{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: 40px auto;
+    font-size: 19px;
+    font-weight: 600;
+    background-color: #f0f8ff;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    box-shadow: 5px 15px 10px gray;
+}
+
+footer{
+    margin-top: 4em;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+@media (max-width: 768px){
+    #Age{
+        width: 70%;
+        font-size: 15px;
+    }
+    .form_class{
+        width: 400px;
+    }
+}
